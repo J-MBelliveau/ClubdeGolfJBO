@@ -1,2 +1,6 @@
 # ClubdeGolfJBO
-golf course CRM
+golf course CRM.
+- learn django
+- postgre
+- git
+- JS, CSS and HTML
