@@ -9,7 +9,7 @@
 }
 
 .navbar {
-    background: #131313;
+    background: #1f0a68;
     height: 80px;
     display:flex;
     justify-content: center ;
@@ -33,7 +33,7 @@
 
 #navbar__logo {
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to top, #fff 25%, #913840 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -90,13 +90,13 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062 ;
+    background: #913840 ;
     color: #fff;
 }
 
 /*makes the button change colours when you hover over it */
 .button:hover {
-    background: #4837ff;
+    background: #4b8f67;
     transition: all 0.3s ease;
 }
 
@@ -279,7 +279,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #fff;
+    background: #4b8f67;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -302,3 +302,102 @@
     width: 80%;
 }
 
+/* Mobile Responsive */
+
+@media screen and (max-width: 780px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    .main__content h2 {
+        font-size: 3rem;
+    }
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    
+
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .main__content h2 {
+        font-size: 2rem;
+    }
+    .main__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    .main__btn {
+        padding: 12px 36px;
+
+    }
+}
+
+/* Services section css */
+
+.services {
+    background: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, 
+    #ff8177 0%, 
+    #ff867a 0%,
+    #ff8c7f,
+    #f99185,
+    #cf556c,
+    #b12a5b);
+    background-size: 100%;
+    margin-bottom: 5rem ;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent
+}
+
+.services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(17,17,17,0.6rem) 100%),
+    url('/ClubdeGolfJBO/Website/images/golf_course1.jpg');
+    background-size: cover;
+}
